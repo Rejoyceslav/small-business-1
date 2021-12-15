@@ -1,0 +1,7 @@
+# created by virtualenv automatically
+/Scripts/
+/Lib/
+/pyvenv.cfg
+/run.ps1
+/core/db.sqlite3
+/info.txt

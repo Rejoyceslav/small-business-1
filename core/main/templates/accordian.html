@@ -1,0 +1,37 @@
+{% load static %}
+
+<div id="accordian" class="">
+  <ul>
+    <!-- we will keep this LI open by default -->
+    <li class="{{ class_of_oferta|default:"" }}">
+      <a href="{% url 'oferta' %}"><h3>Oferta<span class="icon-header"><img src="{% static 'img/svg/noun_Document_113094.svg' %}"/></span></h3></a>
+    </li>
+    <li class="{{ class_of_uslugi|default:"" }}">
+      <h3>Usługi<span class="icon-header"><img src="{% static 'img/svg/noun_Wrench_943638.svg' %}"/></span></h3>
+      <ul>
+        <li><a href="{% url 'przeglad' %}">Przegląd okresowy</a></li>
+        <li><a href="{% url 'remonty' %}">Remonty i naprawy</a></li>
+      </ul>
+    </li>
+    <li class="{{ class_of_sprzedaz|default:"" }}">
+      <h3><span class="icon-header"><img src="{% static 'img/svg/noun_Shopping Cart_17887.svg' %}"/></span>Sprzedaż</h3>
+      <ul>
+        <a href="{% url 'materialy_i_czesci' %}"><li class="accordian-section">materiały i części zamienne</li></a>
+        <li><a href="javascript:void(0);" id="oleje_link">oleje</a></li>
+        <li><a href="javascript:void(0);" id="lozyska_link">łożyska</a></li>
+        <li><a href="javascript:void(0);" id="przepustnice_link">przepustnice</a></li>
+        <li><a href="javascript:void(0);" id="wzierniki_link">wzierniki</a></li>
+        <li><a href="javascript:void(0);" id="filtry_link">filtry</a></li>
+        <li><a href="javascript:void(0);" id="manometry_link">manometry</a></li>
+        <li><a href="javascript:void(0);" id="pasy_napedowe_link">pasy napędowe</a></li>
+        <li><a href="javascript:void(0);" id="przylacza_link">przyłącza</a></li>
+        <a href="{% url 'sprzedaz_urzadzen' %}"><li class="accordian-section">urządzenia</li></a>
+        <li><a href="#" id="some_id">some link</a></li>
+        <li><a href="#" id="some_id2">some link2</a></li>
+      </ul>
+    </li>
+     <li class="{{ class_of_kontakt|default:"" }}">
+      <a href="{% url 'kontakt' %}"><h3>Kontakt<span class="icon-header" style="padding-right: 11px;"><img src="{% static 'img/svg/noun_Phone Mail_2843345.svg' %}"/></span></h3></a>
+    </li>
+  </ul>
+</div>

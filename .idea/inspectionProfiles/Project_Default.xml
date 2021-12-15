@@ -1,0 +1,21 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyBroadExceptionInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyTypeCheckerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="int.sort" />
+          <option value="core.to_do_list.models.ToDoList.objects" />
+          <option value="core.todo_list.models.ToDoList.objects" />
+          <option value="todo_list.models.ToDoList.objects" />
+          <option value="tasks.models.Task.objects" />
+          <option value="tasks.models.Tag.objects" />
+          <option value="tasks.models.Folder.objects" />
+          <option value="tasks.models.Group.objects" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

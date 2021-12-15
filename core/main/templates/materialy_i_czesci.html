@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div>
+
+    <div class="subpage_container">
+
+        <div class="subpage-left-col">
+            {% include 'accordian.html' with class_of_sprzedaz='active' %}
+        </div>
+
+        <div class="subpage-middle-col">
+
+            <div class="middle_col_container">
+
+                {% for material in materialy %}
+                    {% if material.visible == True %}
+                    <div class="materialy-item">
+                        <div class="item-title">
+                            <div class="item-title-text">{{ material.title }}</div>
+                        </div>
+                        <div class="materialy-item-image-and-description">
+                            <div class="materialy-image">
+                                {% if material.image %}
+                                    <img src="{{ material.image.url }}">
+                                {% else %}
+                                    <div class="materialy-image-not-found">
+                                        Brak obrazu
+                                    </div>
+                                {% endif %}
+                            </div>
+
+                            <div class="description-container">
+                                <div class="item-description">
+                                        {{ material.description|linebreaksbr }}
+                                </div>
+
+                                {% if material.description2 %}
+                                <div class="item-description-ps">
+                                    {{ material.description2|linebreaksbr }}
+                                </div>
+                                {% else %}
+                                {% endif %}
+
+                                {% if material.description3 %}
+                                <div class="item-description-ps">
+                                    {{ material.description3|linebreaksbr }}
+                                </div>
+                                {% else %}
+                                {% endif %}
+                            </div>
+                        </div>
+
+                    {% else %}
+                    <div style="display: none">
+                    {% endif %}
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+{% endblock %}

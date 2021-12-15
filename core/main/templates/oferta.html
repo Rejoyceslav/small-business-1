@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div>
+
+    <div class="subpage_container">
+
+        <div class="subpage-left-col">
+            {% include 'accordian.html' with class_of_sprzedaz='active' class_of_uslugi='active' %}
+        </div>
+
+        <div class="subpage-middle-col">
+            <div class="oferta-ulotki">
+<!--                <div class="subpage_offer_img">-->
+<!--
+<!--                </div>-->
+
+<!--                <div class="subpage_offer_img">-->
+<!--
+<!--                </div>-->
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="hero-image" oncontextmenu="return false">
+
+  <div class="hero-content">
+    <div class="animate__animated animate__bounceInDown">
+      <div class="hero-content-bg" id="hero-content-bg">
+        <h2><span id="hero-text">Zdmuchniemy kurz z twoich dmuchaw</span></h2>
+      </div>
+      <span>
+        <a id="hero-button" class="action-button" style="color: white" href="{% url 'oferta' %}" target="_self">Zobacz ofertę</a>
+      </span>
+    </div>
+  </div>
+
+<!--  <div style="position: relative; bottom: -53.2%">-->
+  <div class="section1-svg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#b8b24a" fill-opacity="0.45" d="M0 244L720 315L1440 238L1440 321L720 321L0 321Z"></path>
+      <path fill="#958d03" fill-opacity="0.8" d="M0 256L720 315L1440 258L1440 321L720 321L0 321Z"></path>
+
+      <path fill="#b8b24a" fill-opacity="0.220" d="M0 280L720 296L1440 280L1440 321L720 321L0 321Z"></path>
+      <path fill="#c2bc4e" fill-opacity="0.420" d="M0 279L720 299L1440 277L1440 321L720 321L0 321Z"></path>
+
+      <path fill="#181a1b" fill-opacity="1" d="M0 265L720 313L1440 268L1440 321L720 321L0 321Z"></path>
+      <path fill="#181a1b" fill-opacity="1" d="M0 297L720 317L1440 297L1440 321L720 321L0 321Z"></path>
+    </svg>
+  </div>
+</div>
+
+<div class="cards-container2">
+
+  <div class="row cards-position">
+
+    <div class="col-sm-2" id="card1">
+      <div class="card animate__animated animate__bounce">
+          <a href="{% url 'remonty' %}">
+            <div class="card-whole">
+              <div class="card-picture-section">
+                <img src="{% static 'img/kategorie/blower_noStroke.png' %}" class="card-img" alt="Remonty i naprawy awaryjne">
+              </div>
+              <div class="card-title-section">
+                <div class="card-title">Remonty i naprawy awaryjne</div>
+              </div>
+            </div>
+          </a>
+      </div>
+    </div>
+
+    <div class="col-sm-2" id="card2">
+      <div class="card animate__animated animate__bounce">
+        <a href="{% url 'przeglad' %}">
+          <div class="card-whole">
+            <div class="card-picture-section">
+              <img src="{% static 'img/kategorie/cross-section-blower_noStroke.png' %}" class="card-img" alt="Remonty i naprawy awaryjne">
+            </div>
+            <div class="card-title-section">
+              <div class="card-title">Przegląd okresowy</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-sm-2" id="card3">
+      <div class="card animate__animated animate__bounce">
+        <a href="{% url 'sprzedaz_urzadzen' %}">
+          <div class="card-whole">
+            <div class="card-picture-section">
+              <img src="{% static 'img/kategorie/side-channel-blower.png' %}" class="card-img" alt="Remonty i naprawy awaryjne">
+            </div>
+            <div class="card-title-section">
+              <div class="card-title">Sprzedaż urządzeń</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-sm-2" id="card4">
+      <div class="card animate__animated animate__bounce">
+        <a href="{% url 'materialy_i_czesci' %}">
+          <div class="card-whole">
+            <div class="card-picture-section">
+              <img src="{% static 'img/kategorie/filtry_noStroke.png' %}" class="card-img" alt="Remonty i naprawy awaryjne">
+            </div>
+            <div class="card-title-section">
+              <div class="card-title">Materiały i części</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="sections-divider"></div>
+
+<div class="description-first-section">
+
+  <div class="description-title-section">
+      Czym zajmuje się Emart Serwis?
+  </div>
+
+  <div class="description-text-section" id="onas-box">
+    <span>
+      Glownym celem firmy Emart Serwis jest udzielanie wartosciowych uslug w zakresie
+      obslugi dmuchaw Rootsa, sprezarek srubowych oraz dmuchaw bocznokanalowych.
+      *Wspolpracujemy z naszymi klientami za zasadach partnerstwa
+      *Oferujemy naszym partneromnajwyzsza jakosc wykonywania uslug w zakresie remontow,
+      przegladow oraz doradztwa technicznego
+      *Wspolpracujemy ze sprawdzonymi producentami maszun oraz czesci zamiennych
+      by zapewnic najlepsza jakosc wykonywanych prac, ale takze by zaoszczedzic naszym
+      klienta czasu i zbednych kosztow.
+      Nasze motto : Solidnosc, rzetelnosc i fachowosc,
+    </span>
+  </div>
+</div>
+
+
+
+
+<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">-->
+<!--  <path fill="#b8b24a" fill-opacity="0.45" d="M0 244L720 315L1440 238L1440 321L720 321L0 321Z"></path>-->
+<!--  <path fill="#958d03" fill-opacity="0.8" d="M0 256L720 315L1440 258L1440 321L720 321L0 321Z"></path>-->
+
+<!--  <path fill="#b8b24a" fill-opacity="0.220" d="M0 280L720 296L1440 280L1440 321L720 321L0 321Z"></path>-->
+<!--  <path fill="#c2bc4e" fill-opacity="0.420" d="M0 279L720 299L1440 277L1440 321L720 321L0 321Z"></path>-->
+
+<!--  <path fill="#000000" fill-opacity="1" d="M0 265L720 313L1440 268L1440 321L720 321L0 321Z"></path>-->
+<!--  <path fill="#000000" fill-opacity="1" d="M0 297L720 317L1440 297L1440 321L720 321L0 321Z"></path>-->
+<!--</svg>-->
+
+{% endblock %}

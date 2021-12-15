@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div>
+
+    <div class="subpage_container">
+
+        <div class="subpage-left-col">
+
+            <div class="subpage-left-col">
+            {% include 'accordian.html' with class_of_sprzedaz='active' %}
+            </div>
+
+        </div>
+
+        <div class="subpage-middle-col">
+
+            <div class="middle_col_container">
+
+                <div>
+                        Emart Serwis prowadzi sprzedaż dmuchaw Rootsa,bocznokanałowych oraz sprężarek srubowych wiodących
+            marek na rynku : Lutos, Atlas Copco,Robuschi ,Spomax, Effepizeta,Mapro, Emmecom, Kubicek i innych.
+            Istnieje mozliwosc zakupu nowego lub używanego stopnia sprężającego a także konkretnych podzespolów.
+            W ofercie mamy rownież silniki elektryczne takich marek jak: Siemens,Hoyer, AC-Motoren, Celna Indukta.
+                </div>
+
+            </div>
+
+            <div style="display: flex; flex-flow: row wrap">
+                {% for material in materialy %}
+                    {% if material.visible == True %}
+                    <div style="display: flex">
+                        {{ material.title }} Visible
+                        <div class="materialy-image">
+                            <img src="{{ material.image.url }}">
+                        </div>
+                        {{ material.image }}
+                    {% else %}
+                    <div style="display: none">
+                        {{ material.title }} Not visible
+                    {% endif %}
+
+
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

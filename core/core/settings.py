@@ -58,7 +58,11 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            path.join(BASE_DIR, ''),
+            path.join(BASE_DIR, 'templates'),
+            path.join(BASE_DIR, 'main/templates'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -121,12 +125,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+# When DEBUG = True and django.core.staticfiles in INSTALLED_APPS
+# Django will serve files located in the STATICFILES_DIRS tuple using the STATIC_URL path as the starting point
 STATIC_URL = '/static/'
+STATIC_ROOT = path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
-    path.join(BASE_DIR, 'static'),
+    path.join(BASE_DIR, 'staticfiles'),  # running collectstatic moves these directories to STATIC_ROOT
 ]
 
-MEDIA_URL = '/img/'
+MEDIA_URL = '/media/'
 MEDIA_ROOT = path.join(BASE_DIR, 'media')
 
 # Default primary key field type
