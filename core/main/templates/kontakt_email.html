@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="subpage_container">
+
+    <div class="subpage_middle_col">
+        <div class="subpage_kontakt_main_column">
+
+            <div class="subpage_kontakt_form_container">
+
+                <div class="subpage_title">emart serwis</div>
+
+                <div class="subpage_kontakt_description">
+                    <div class="subpage_kontakt_address">
+                        <div class="subpage_kontakt_phone"><span class="navbar-kontakt-address-line">Artur Wojczak<br><a href="https://goo.gl/maps/Gh6QiHbp5vZ68w7BA" target="_blank"><i class="bi bi-house-fill" style="color: #c8bd02"></i> 55-114 Szewce ul. Polna 3</span></a></div>
+                    </div>
+                    Zapraszamy do kontaktu telefonicznego, mailowego lub poprzez nasz formularz kontaktowy
+                    <div class="subpage_kontakt_mail_phone_container">
+                        <div class="subpage_kontakt_phone"><a href="tel:+48501197185"><span class="navbar-contact-link" id="navbar-contact-link-1"><i class="bi bi-telephone-fill" style="color: #c8bd02"></i> +48 501 197 185</span></a></div>
+                        <div class="subpage_kontakt_mail"><a href="mailto:kontakt@emartserwis.pl"><span class="navbar-contact-link" id="navbar-contact-link-2"><i class="bi bi-envelope-fill" style="color: #c8bd02"></i> kontakt@emartserwis.pl</span></a></div>
+                    </div>
+                </div>
+
+                <div class="subpage_kontakt_message_box">
+                {% include 'messages.html' %}
+                </div>
+
+                <form method="POST">
+                    <div class="subpage_kontakt_form">
+                        {% csrf_token %}
+                        <div class="subpage_kontakt_form_rows">
+                            imię i nazwisko: <br>
+                            {{ form.name }} <br>
+                            firma: <br>
+                            {{ form.company }} <br>
+                            e-mail: <br>
+                            {{ form.email }} <br>
+                            telefon: <br>
+                            {{ form.phone }} <br>
+                        </div>
+
+                        <div class="subpage_kontakt_form_rows">
+                            wiadomość: <br>
+                            {{ form.message }}
+                        </div>
+                    </div>
+
+                    <div class="subpage_kontakt_submit_button_container">
+                        <button class="subpage_kontakt_submit_button" id="kontakt_submit_button_id">Wyślij formularz</button>
+                        <input type="submit"  aria-labelledby="kontakt_submit_button_id"  style="display: none" value="Wyślij formularz"/>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+{% endblock %}

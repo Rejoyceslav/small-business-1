@@ -7,11 +7,11 @@
 
   <div class="hero-content">
     <div class="animate__animated animate__bounceInDown">
-      <div class="hero-content-bg" id="hero-content-bg">
-        <h2><span id="hero-text">Zdmuchniemy kurz z twoich dmuchaw</span></h2>
+      <div class="hero-content-bg disable-select" id="hero-content-bg" oncontextmenu="return false">
+        <h2><span id="hero-text">Przedłuż życie swoich dmuchaw. Serwisuj z nami.</span></h2>
       </div>
       <span>
-        <a id="hero-button" class="action-button" style="color: white" href="{% url 'oferta' %}" target="_self">Zobacz ofertę</a>
+        <a id="hero-button" class="action-button" href="{% url 'oferta' %}" target="_self">Zobacz ofertę</a>
       </span>
     </div>
   </div>
@@ -37,7 +37,7 @@
 
     <div class="col-sm-2" id="card1">
       <div class="card animate__animated animate__bounce">
-          <a href="{% url 'remonty' %}">
+          <a href="{% url 'uslugi' %}">
             <div class="card-whole">
               <div class="card-picture-section">
                 <img src="{% static 'img/kategorie/blower_noStroke.png' %}" class="card-img" alt="Remonty i naprawy awaryjne">
@@ -52,7 +52,7 @@
 
     <div class="col-sm-2" id="card2">
       <div class="card animate__animated animate__bounce">
-        <a href="{% url 'przeglad' %}">
+        <a href="{% url 'uslugi' %}">
           <div class="card-whole">
             <div class="card-picture-section">
               <img src="{% static 'img/kategorie/cross-section-blower_noStroke.png' %}" class="card-img" alt="Remonty i naprawy awaryjne">
@@ -67,7 +67,7 @@
 
     <div class="col-sm-2" id="card3">
       <div class="card animate__animated animate__bounce">
-        <a href="{% url 'sprzedaz_urzadzen' %}">
+        <a href="{% url 'materialy_i_czesci' %}#urzadzenia_title_id">
           <div class="card-whole">
             <div class="card-picture-section">
               <img src="{% static 'img/kategorie/side-channel-blower.png' %}" class="card-img" alt="Remonty i naprawy awaryjne">
@@ -102,22 +102,25 @@
 
 <div class="description-first-section">
 
-  <div class="description-title-section">
+  <div class="description-title-section highlight_text">
       Czym zajmuje się Emart Serwis?
   </div>
 
   <div class="description-text-section" id="onas-box">
-    <span>
-      Glownym celem firmy Emart Serwis jest udzielanie wartosciowych uslug w zakresie
-      obslugi dmuchaw Rootsa, sprezarek srubowych oraz dmuchaw bocznokanalowych.
-      *Wspolpracujemy z naszymi klientami za zasadach partnerstwa
-      *Oferujemy naszym partneromnajwyzsza jakosc wykonywania uslug w zakresie remontow,
-      przegladow oraz doradztwa technicznego
-      *Wspolpracujemy ze sprawdzonymi producentami maszun oraz czesci zamiennych
-      by zapewnic najlepsza jakosc wykonywanych prac, ale takze by zaoszczedzic naszym
-      klienta czasu i zbednych kosztow.
-      Nasze motto : Solidnosc, rzetelnosc i fachowosc,
-    </span>
+Glównym celem firmy Emart Serwis jest udzielanie wartościowych usług w zakresie obsługi dmuchaw
+rootsa, sprężarek śrubowych oraz dmuchaw bocznokanałowych.
+
+    • Współpracujemy z naszymi klientami na zasadach partnerstwa.
+
+    • Oferujemy naszym partnerom najwyższą jakość wykonywania usług w zakresie remontów, przeglądów
+      oraz doradztwa technicznego.
+
+    • Współpracujemy ze sprawdzonymi producentami maszyn oraz części zamiennych.
+
+    • Zapewniamy najlepszą jakość wykonywanych prac, co daje naszym klientom oszczedność czasu i
+      zbędnych kosztów.
+
+Nasze motto: solidność, rzetelność i fachowość.
   </div>
 </div>
 

@@ -10,9 +10,13 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400&family=Open+Sans:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400&family=Open+Sans:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+<!--retired-->
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Pragati+Narrow&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
@@ -24,8 +28,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@0,300;0,400;0,500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
-<link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 <link rel="stylesheet" href="{% static 'style.css' %}">
 <html lang="pl">
@@ -38,15 +42,15 @@
 
 <body>
 
-<nav class="navbar navbar-expand-xl navbar-dark sticky-div navbar-black-bg" role="navigation" id="navbar">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-div navbar-black-bg" role="navigation" id="navbar">
 
-<div class="display-flex">
+<div class="navbar-display-flex">
 
   <div class="navbar-divider-left" id="navbar-divider-left"></div>
-  <a class="navbar-brand center-all" href="{% url 'index' %}">
+  <a class="navbar-brand center-all disable-select" href="{% url 'index' %}">
     <img id="navbar-logo" class="logo" src="{% static 'img/logo/logo_motion_colors_depth_new_subtitle.png' %}" alt="" oncontextmenu="return false">
   </a>
-
+  <div class="navbar-divider-for-mobile"></div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -62,7 +66,7 @@
         <a class="nav-link" id="oferta-link" href="{% url 'oferta' %}">Oferta</a>
       </li>
       <li class="nav-item nav-link-active">
-        <a class="nav-link" id="uslugi-link" href="{% url 'przeglad' %}">Usługi</a>
+        <a class="nav-link" id="uslugi-link" href="{% url 'uslugi' %}">Usługi</a>
       </li>
 <!--      <li class="nav-item dropdown">-->
 <!--        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUslugi" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->

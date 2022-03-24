@@ -7,59 +7,15 @@
 
     <div class="subpage_container">
 
-    <div class="subpage-left-col">
+    <div class="subpage_middle_col">
 
-        <div id="accordian" class="">
-          <ul>
-            <!-- we will keep this LI open by default -->
-            <li>
-              <a href="{% url 'oferta' %}"><h3>Oferta<span class="icon-header"><img src="{% static 'img/svg/noun_Document_113094.svg' %}"/></span></h3></a>
-            </li>
-            <li class="active">
-              <h3>Usługi<span class="icon-header"><img src="{% static 'img/svg/noun_Wrench_943638.svg' %}"/></span></h3>
-              <ul>
-                <li><a href="{% url 'przeglad' %}">Przegląd okresowy</a></li>
-                <li><a href="{% url 'remonty' %}">Remonty i naprawy</a></li>
-              </ul>
-            </li>
-            <li>
-              <h3><span class="icon-header" oncontextmenu="return false"><img src="{% static 'img/svg/noun_Shopping Cart_17887.svg' %}"/></span>Sprzedaż</h3>
-              <ul> <!-- Anchors take you to the previous element so that the view is centered -->
-                <a href="{% url 'materialy_i_czesci' %}"><li class="accordian-section">materiały i części zamienne</li></a>
-                <li><a href="{% url 'materialy_i_czesci' %}#sprzedaz_containerID" id="oleje_link">oleje</a></li>
-                <li><a href="{% url 'materialy_i_czesci' %}#oleje" id="lozyska_link">łożyska</a></li>
-                <li><a href="{% url 'materialy_i_czesci' %}#lozyska" id="przepustnice_link">przepustnice</a></li>
-                <li><a href="{% url 'materialy_i_czesci' %}#przepustnice" id="wzierniki_link">wzierniki</a></li>
-                <li><a href="{% url 'materialy_i_czesci' %}#wzierniki" id="filtry_link">filtry</a></li>
-                <li><a href="{% url 'materialy_i_czesci' %}#filtry" id="manometry_link">manometry</a></li>
-                <li><a href="{% url 'materialy_i_czesci' %}#manometry" id="pasy_napedowe_link">pasy napędowe</a></li>
-                <li><a href="{% url 'materialy_i_czesci' %}#pasy_napedowe" id="przylacza_link">przyłącza</a></li>
-                <a href="{% url 'sprzedaz_urzadzen' %}"><li class="accordian-section">urządzenia</li></a>
-                <li><a href="#" id="some_id">some link</a></li>
-                <li><a href="#" id="some_id">some link2</a></li>
-              </ul>
-            </li>
-             <li>
-              <a href="{% url 'kontakt' %}"><h3>Kontakt<span class="icon-header" style="padding-right: 11px;"><img src="{% static 'img/svg/noun_Phone Mail_2843345.svg' %}"/></span></h3></a>
-            </li>
-          </ul>
-        </div>
+        <div>
+        Nasza firma zapewnia pelną obslugę serwisową gwarancyjną i pogwarancyjną oraz szybki dostęp do oryginalnych części i materialów eksploatacyjnych.
+        Wykonujemy przeglądy dmuchaw wszystkich firm dostępnych na rynku: Lutos, Atlas Copco,Robuschi Spomax Effepizeta,mapro, Emmecom, Kubicek i innych.
+        *Wykonywanie okresowych przegladów ma ogromne znaczenie dla utrzymania urzadzeń w należytym stanie technicznym i tym samym utrzymanie ich w wysokiej niezawodności i sprawności przez długi okres użytkowania.
 
-    </div>
-
-    <div class="subpage-middle-col">
-
-        <div class="middle_col_container">
-
-            <div>
-            Nasza firma zapewnia pelną obslugę serwisową gwarancyjną i pogwarancyjną oraz szybki dostęp do orginalnych części i materialów eksploatacyjnych.
-            Wykonujemy przeglądy dmuchaw wszystkich firm dostępnych na rynku: Lutos, Atlas Copco,Robuschi Spomax Effepizeta,mapro, Emmecom, Kubicek i innych.
-            *Wykonywanie okresowych przegladów ma ogromne znaczenie dla utrzymania urzadzeń w należytym stanie technicznym i tym samym utrzymanie ich w wysokiej niezawodności i sprawności przez długi okres użytkowania.
-
-            *Podczas przeglądu wymieniamy olej, filtry oraz inne materialy eksploatacyjne które po diagnostyce zostają zaliczone do wymiany.
-            *Wiekszość producentow zaleca przegląd maszyn co 6 miesiecy lub 4000 roboczo godzin.
-            </div>
-
+        *Podczas przeglądu wymieniamy olej, filtry oraz inne materialy eksploatacyjne które po diagnostyce zostają zaliczone do wymiany.
+        *Wiekszość producentów zaleca przegląd maszyn co 6 miesięcy lub 4000 roboczo godzin.
         </div>
 
     </div>

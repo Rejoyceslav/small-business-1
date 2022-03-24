@@ -5,25 +5,71 @@
 {% block content %}
 <div>
 
+<!--    <div class="subpage_sprzedaz_1st_row">-->
+<!--        <div class="subpage_title" style="padding-bottom: 0px;">oferta</div>-->
+<!--    </div>-->
+
     <div class="subpage_container">
 
-        <div class="subpage-left-col">
-            {% include 'accordian.html' with class_of_sprzedaz='active' class_of_uslugi='active' %}
-        </div>
+            <div class="subpage_oferta_main_column_container">
 
-        <div class="subpage-middle-col">
-            <div class="oferta-ulotki">
-<!--                <div class="subpage_offer_img">-->
-<!--
-<!--                </div>-->
+                <div class="subpage_oferta_row">
+                    <div class="subpage_title">Świadczymy usługi w zakresie:</div>
+                    <div class="subpage_oferta_img_and_description">
+                        <div>
+                            <img class="subpage_oferta_img" src="{% static 'img/subpages/oferta/oferta_usługi_tiny.jpg' %}">
+                        </div>
+                        <div class="subpage_oferta_description" style="flex-grow: 1;">
+                            <p> • kompleksowych przeglądów dmuchaw roots i dmuchaw bocznokanałowych
+                                • napraw awaryjnych
+                                • sprzedaży dmuchaw
+                                • remontów kapitalnych
+                                • remontów oraz sprzedaży silników
+                                • sprzedaży części oraz materiałów eksploatacyjnych</p>
+                        </div>
+                    </div>
+                </div>
 
-<!--                <div class="subpage_offer_img">-->
-<!--
-<!--                </div>-->
+                <div class="subpage_oferta_row">
+                    <div class="subpage_title">Podczas standardowego przeglądu:</div>
+                    <div class="subpage_oferta_img_and_description">
+                       <div>
+                            <img class="subpage_oferta_img" src="{% static 'img/subpages/oferta/oferta_przeglad_676x400.jpg' %}">
+                        </div>
+                        <div class="subpage_oferta_description" style="flex-grow: 1;">
+                            <p>• wymieniamy olej i filtry
+                                • regulujemy naciąg pasów
+                                • wykonujemy pomiary luzów roboczych
+                                • sprawdzamy zużycia kół pasowych i pasów
+                                • diagnozujemy drgania stopnia sprężającego
+                                • oceniamy zawory bezpieczeństwa i stan klapy zwrotnej
+                                • oceniamy uszczelnienia labiryntowe i wału napędowego
+                                • mierzymy temperaturę jednostki w miejscach pracy łożysk
+                                • oceniamy stan techniczny urządzenia i jego armatury
+                                • sprawdzamy i ustawiamy osiowość kół pasowych
+                                • sporządzamy protokół z wykonanego przeglądu
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subpage_oferta_row">
+                    <div class="subpage_title highlight_text">Stałym klientom:</div>
+                    <div class="subpage_oferta_img_and_description">
+                        <div>
+                            <img class="subpage_oferta_img" src="{% static 'img/subpages/oferta/oferta_staly_klient.jpg' %}">
+                        </div>
+                        <div class="subpage_oferta_description" style="flex-grow: 1">
+                            <p>• udzielamy dużego rabatu
+                                • wydłużamy okres gwarancyjny
+                                • zaprewniamy darmowy stopień zastępczy
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </div>
 
     </div>
 </div>
-
 {% endblock %}

@@ -3,15 +3,15 @@
 {% load static %}
 
 {% block content %}
-<div>
+<div style="background-color: #292929">
 
-    <div class="subpage_container">
+    <div class="subpage_sprzedaz_1st_row">
+        <div class="subpage_title">części zamienne i materiały eksploatacyjne</div>
+    </div>
 
-        <div class="subpage-left-col">
-            {% include 'accordian.html' with class_of_sprzedaz='active' %}
-        </div>
+    <div class="subpage_materialy_container">
 
-        <div class="subpage-middle-col">
+        <div class="subpage_middle_col">
 
             <div class="middle_col_container">
 
@@ -19,7 +19,7 @@
                     {% if material.visible == True %}
                     <div class="materialy-item">
                         <div class="item-title">
-                            <div class="item-title-text">{{ material.title }}</div>
+                            <div class="item-title-text highlight_text">{{ material.title }}</div>
                         </div>
                         <div class="materialy-item-image-and-description">
                             <div class="materialy-image">
@@ -52,17 +52,35 @@
                                 {% endif %}
                             </div>
                         </div>
-
                     {% else %}
                     <div style="display: none">
                     {% endif %}
                     </div>
                 {% endfor %}
-
             </div>
         </div>
+    </div>
 
+    <div class="subpage_sprzedaz_2nd_row_container">
+        <div class="subpage_sprzedaz_2nd_row">
+            <div class="subpage_title" id="urzadzenia_title_id">urządzenia</div>
+            <div class="subpage_sprzedaz_columns_description">
+                <div class="subpage_sprzedaz_2nd_row_all_images">
+                    <div class="subpage_sprzedaz_2nd_row_image1"></div>
+                    <div class="subpage_sprzedaz_2nd_row_image_separator"></div>
+                    <div class="subpage_sprzedaz_2nd_row_image2"></div>
+                    <div class="subpage_sprzedaz_2nd_row_image_separator"></div>
+                    <div class="subpage_sprzedaz_2nd_row_image3"></div>
+                </div>
+                <p>Emart Serwis prowadzi sprzedaż dmuchaw Rootsa, bocznokanałowych oraz sprężarek śrubowych, wiodących marek.
+                    W ofercie posiadamy urządzenia takich produdentów jak: Lutos, Atlas Copco, Robuschi, Spomax, Effepizeta, Mapro, Emmecom, Kubicek i innych.
 
+                    Istnieje możliwosc zakupu nowego lub używanego stopnia sprężającego a także konkretnych podzespolów.
+
+                    W ofercie mamy rownież silniki elektryczne takich marek jak: Siemens, Hoyer, AC-Motoren, Celna Indukta.
+                </p>
+            </div>
+        </div>
     </div>
 </div>
 

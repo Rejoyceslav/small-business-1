@@ -26,7 +26,7 @@ window.onscroll = function() {
 };
 
 function navbarTransitionFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar-logo").style.clipPath = "inset(0px 0px 11.5% 0px)";
     document.getElementById("navbar-logo").style.height = "6.0vh";
     document.getElementById("navbar-logo").style.margin = "0px 0px -15px 0px";
@@ -50,9 +50,11 @@ function hideHeroTextFunction() {
     document.getElementById("hero-content-bg").style.transitionDuration = "0.6s";
     document.getElementById("hero-text").style.color = "transparent";
     document.getElementById("hero-text").style.backgroundColor = "transparent";
+    document.getElementById("hero-text").style.textShadow = "2px 2px rgba(24,26,27,0.0)";
     document.getElementById("hero-content-bg").style.backgroundColor = "transparent";
   } else {
     document.getElementById("hero-text").style.color = "";
+    document.getElementById("hero-text").style.textShadow = "2px 2px rgba(24,26,27,0.55)";
     document.getElementById("hero-content-bg").style.backgroundColor = "";
     document.getElementById("hero-text").style.backgroundColor = "";
   }

@@ -26,3 +26,25 @@ class Uslugi(models.Model):
     description = models.TextField(null=True, blank=True)
     create = models.DateTimeField(auto_now_add=True)
     visible = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        ordering = ['id']  # when ordering multiple values, this is the order
+
+
+class Email(models.Model):
+    name = models.CharField(max_length=50, blank=False)
+    company = models.CharField(max_length=50, blank=False)
+    email = models.EmailField(max_length=50, blank=False)
+    phone = models.CharField(max_length=50, blank=False)
+    message = models.TextField(null=True, blank=False)
+
+    def __str__(self):
+        return f'[Nr {self.id}] Pani/Pani: {self.name}  //  Firma: {self.company}'
+        # return title
+        # return self.name
+
+    class Meta:
+        ordering = ['-id']  # when ordering multiple values, this is the order

@@ -7,15 +7,7 @@
 
     <div class="subpage_container">
 
-        <div class="subpage-left-col">
-
-            <div class="subpage-left-col">
-            {% include 'accordian.html' with class_of_sprzedaz='active' %}
-            </div>
-
-        </div>
-
-        <div class="subpage-middle-col">
+        <div class="subpage_middle_col">
 
             <div class="middle_col_container">
 
@@ -28,7 +20,7 @@
 
             </div>
 
-            <div style="display: flex; flex-flow: row wrap">
+            <div>
                 {% for material in materialy %}
                     {% if material.visible == True %}
                     <div style="display: flex">
